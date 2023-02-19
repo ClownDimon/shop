@@ -61,8 +61,11 @@ li {
 .info-btn {
   position: absolute;
   bottom: 0 auto;
-  left: 23%;
   width: 50%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -114,13 +117,38 @@ li {
   padding-bottom: 0.5rem;
 }
 
+.navbars a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.navbars a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
 .icons div {
   color: #fff;
   cursor: pointer;
   font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.icons a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem;
 }
 
 .icons div:hover {
+  color: var(--main-color);
+}
+
+.icons a:hover {
   color: var(--main-color);
 }
 
@@ -159,7 +187,7 @@ li {
 .box-container {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21.6rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20.6rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -170,12 +198,17 @@ li {
   position: relative;
 }
 
+.cards-conteiner {
+  grid-template-columns: repeat(auto-fit, minmax(20.6rem, 1fr));
+  display: grid;
+  max-width: 50rem;
+  min-width: 21.6rem;
+  gap: 1.5rem;
+}
+
 .cards {
+  padding: 5rem 1rem 5rem 1rem;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 26rem;
-  height: 35rem;
   border: var(--border);
   position: relative;
 }
@@ -209,17 +242,20 @@ li {
 .info-price {
   position: absolute;
   bottom: 0;
-  align-items: center;
-  margin-left: 23%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
 
 .price {
-  background-color: var(--btn);
-  border-radius: 8%;
-  color: #000000;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
+  border-radius: 5%;
+  display: inline-block;
+  padding: 0.7rem 3rem;
+  font-size: 1.7rem;
+  color: black;
+  background: var(--btn);
 }
 
 .price span {
@@ -260,9 +296,14 @@ li {
 }
 
 .right {
-  text-align: right;
-  margin-left: auto;
+  text-align: left;
+  margin-right: auto;
   max-width: 400px;
+  text-transform: none;
+}
+
+.right h2 {
+  text-transform: none;
 }
 
 .share {
@@ -278,6 +319,10 @@ li {
   border: var(--border);
   margin: 0.3rem;
   border-radius: 50%;
+}
+
+.share a:hover {
+  color: var(--main-color);
 }
 
 .credit {
