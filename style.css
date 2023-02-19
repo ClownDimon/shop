@@ -260,7 +260,7 @@ li {
 
 .price span {
   font-size: 1.5rem;
-  text-decoration: line-through rgba(255, 0, 0, 0.993);
+  text-decoration: line-through #ff0000;
 }
 
 .box img {
